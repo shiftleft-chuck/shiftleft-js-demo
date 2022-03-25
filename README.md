@@ -1,4 +1,4 @@
-# NodeJS Tarpit - Chuck B. (edited)
+# NodeJS Tarpit - Chuck B. (unedited)
 
 An ExpressJS (tarpit) application using mongoDB.
 
