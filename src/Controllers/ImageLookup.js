@@ -10,18 +10,18 @@ class ImageLookup {
 
 
     // ************************************************** Vulnerable Code Block *****
- 
+/* 
     logger.debug(fileContent);
     res.send(fileContent);
   }   
-
+  
 }
 
 module.exports = ImageLookup;
-
+*/
 
     // ************************************************** Remediated Code Block *****
-/*
+
     sanitizedStr = sanitizeString(fileContent)
     logger.debug(sanitizedStr);
     res.send(sanitizedStr);
@@ -35,4 +35,3 @@ module.exports = ImageLookup;
   }
 
 module.exports = ImageLookup;
-*/
