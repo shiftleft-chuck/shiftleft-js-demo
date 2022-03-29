@@ -1,17 +1,25 @@
+# Compare to branch
 source:
   branch: master
-  
+
+# Build rule #1
 build_rules:
   - id: allow-zero-findings
     finding_types:
       - vuln
       - secret
       - insight
-      - "*"
     severity:
-      - SEVERITY_MEDIUM_IMPACT
       - SEVERITY_HIGH_IMPACT
-      - SEVERITY_LOW_IMPACT
+      - SEVERITY_MEDIUM_IMPACT
+#    type:
+#      - SQL Injectin
+#      - Sensitive Data Leak
+#    owasp_category:
+#      -a1-injection
+#      -a4-XML External Entities (XXE)
+#      -a7-cross_site_scripting
+#      -a8-insecure_deserialization
     threshold: 0
     
   - id: reachable-oss-vuln
