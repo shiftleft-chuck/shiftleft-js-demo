@@ -10,7 +10,7 @@ class ImageLookup {
     /* ex: http GET http://localhost:8089/api/v1/image-lookup image=="package.json" */
     const fileContent = fs.readFileSync(req.query.image).toString();
 
-/*
+
     // ************************************************** Vulnerable Code Block *****
  
     logger.debug(fileContent);
@@ -20,7 +20,8 @@ class ImageLookup {
 }
 
 module.exports = ImageLookup;
-*/
+
+/*
 
     // ************************************************** Remediated Code Block *****
 
@@ -37,3 +38,4 @@ module.exports = ImageLookup;
   }
 
 module.exports = ImageLookup;
+*/
