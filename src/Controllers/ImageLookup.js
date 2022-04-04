@@ -2,6 +2,7 @@ const fs = require("fs");
 const { logger } = require("../Logger");
 
 class ImageLookup {
+  /*
   get(req, res) {
     /* File Traversal exploit */
     /* Can read any file in the server by passing the filename (image) in the query params */
@@ -10,6 +11,7 @@ class ImageLookup {
     logger.debug(fileContent);
     res.send(fileContent);
   }
+  */
 }
 
 module.exports = ImageLookup;
