@@ -27,7 +27,8 @@ jobs:
       run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       id: extract_branch
     - name: NextGen Static Analysis
-      run: ${GITHUB_WORKSPACE}/sl analyze --wait --app "shiftleft-js-demo" \
+      run: |
+        ${GITHUB_WORKSPACE}/sl analyze --wait --app "shiftleft-js-demo" \
         --tag branch=${{ github.head_ref || steps.extract_branch.outputs.branch }} \
         --js --cpg .
       env:
